@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sorry Mumm 💜</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Animated Background Blobs -->
+    <div class="background-blobs" aria-hidden="true">
+        <div class="blob blob-1"></div>
+        <div class="blob blob-2"></div>
+        <div class="blob blob-3"></div>
+    </div>
+
+    <!-- Floating Hearts Container -->
+    <div id="hearts-container" aria-hidden="true"></div>
+
+    <!-- Screen 1: Intro -->
+    <section id="intro-screen" class="screen screen-active">
+        <div class="intro-content">
+            <div class="intro-kicker">A Little Surprise 💫</div>
+            <h1 class="intro-heading">This is for you di Mumm 💜</h1>
+            <div class="intro-glow"></div>
+        </div>
+    </section>
+
+    <!-- Screen 2: Apology -->
+    <section id="apology-screen" class="screen">
+        <div class="apology-card">
+            <div class="video-container">
+                <video id="apology-video" autoplay playsinline preload="auto">
+                    <source src="assets/videos/sorry.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+                <img id="video-cover" src="assets/photos/cover.png" alt="Romantic cover photo" class="video-cover hidden">
+            </div>
+            
+            <div id="question-area" class="question-area hidden">
+                <h2 class="question-text">Ana manipiyaa dii Mumm 💜</h2>
+                <div class="button-container">
+                    <button id="yes-button" class="btn btn-yes">YES 💕</button>
+                    <button id="no-button" class="btn btn-no">NO 😢</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Screen 3: Scratch Card -->
+    <section id="scratch-screen" class="screen">
+        <div class="scratch-content">
+            <h2 class="scratch-heading">Scratch Love Card 💜</h2>
+            <p class="scratch-hint">Scratch the card to reveal your surprise ✨</p>
+            
+            <div class="scratch-card-wrapper">
+                <img id="scratch-image" src="assets/photos/kiss.jpeg" alt="Love surprise reveal" class="scratch-image">
+                <canvas id="scratch-canvas" class="scratch-canvas"></canvas>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
